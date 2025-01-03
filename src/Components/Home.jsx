@@ -11,7 +11,7 @@ const Home = () => {
 <div className="flex justify-center items-center min-h-screen">
 <div className="bg-[rgb(242,246,247)] relative flex flex-col justify-center w-[95%] items-center ml-auto">
       {/* Decorative Shapes */}
-      <div className="absolute top-10 left-10">
+      <div className="absolute top-10 border-2 border-black left-10">
         <img
           src={supportShape1}
           alt="Support Shape 1"
@@ -28,7 +28,7 @@ const Home = () => {
 
 
       {/* Content Section */}
-      <div className="container mx-auto px-4 lg:px-12">
+      <div className="container mx-auto border-2 border-black px-4 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* Text Section */}
           <div className="space-y-6">
