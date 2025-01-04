@@ -73,8 +73,7 @@ const About = () => {
         {/* Volunteer Image */}
         <div className="justify-end items-end mt-12 mb-0 ml-96">
           <img
-            src={Donation} // Replace with your image URL
-            alt="Volunteer"
+            src={Donation}             alt="Volunteer"
             className="rounded-md shadow-md "
           />
         </div>
