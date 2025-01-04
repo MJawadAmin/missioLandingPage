@@ -2,6 +2,7 @@ import React from 'react'
 import RightImage from '../assets/download1.png'
 import SignImage from '../assets/signImage.png'
 import ButtomRightImage from '../assets/shape8 1.png'
+import { BsCheckCircle } from 'react-icons/bs'
 
 const BenefitPage = () => {
   return (
@@ -35,13 +36,25 @@ const BenefitPage = () => {
 smarter, not harder</p>
 
 <div className='text-[22px] flex'>
+<div  className="text-[rgb(2,100,126)]">
+      {/* Change the icon color using text-color utility */}
+      <BsCheckCircle />
+    </div>
 Affordable pricing tailored to nonprofit sizes
 </div>
 <div className='text-[22px] flex'>
+<div  className="text-[rgb(2,100,126)]">
+      {/* Change the icon color using text-color utility */}
+      <BsCheckCircle />
+    </div>
 Top-notch support and onboarding
 </div>
-<div className='text-[22px] flex'>
-Unlimited records, users, forms, and storage
+<div className='text-[22px] flex flex-row'>
+<div  className="text-[rgb(2,100,126)]">
+      {/* Change the icon color using text-color utility */}
+      <BsCheckCircle />
+    </div>
+        <p>{" "}Unlimited records, users, forms, and storage</p>
 </div>
 <div> 
     <button className="bg-[rgb(2,100,126)] mr-20 w-[368px] h-[89px] rounded-full text-[22px] text-gray-100 mt-10">Sign Up for lauch Updates</button>
