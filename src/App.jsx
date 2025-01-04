@@ -3,6 +3,7 @@ import './index.css'
 import Navbar from './Components/Navbar/Navbar'
 import Home from './Components/Home'
 import About from './Components/About'
+import FeaturesSection from './Components/FeatureSection'
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
     <Navbar/>
     <Home/>
     <About/>
+    <FeaturesSection/>
     </>
   )
 }
