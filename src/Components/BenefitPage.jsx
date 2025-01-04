@@ -1,12 +1,12 @@
 import React from 'react'
-import RightImage from '../assets/download1.png'
-import SignImage from '../assets/signImage.png'
-import ButtomRightImage from '../assets/shape8 1.png'
+import RightImage from '../assets/DonationImages/download1.png'
+import SignImage from '../assets/DonationImages/signImage.png'
+import ButtomRightImage from '../assets/DonationImages/shape8 1.png'
 import { BsCheckCircle } from 'react-icons/bs'
-import Volunteer from '../assets/MissiVolunteer.png'
-import Rectangular from '../assets/Rectangle 24.png'
-import DonateImage from '../assets/download 2.png'
-import Donation from '../assets/Donation.png'
+import Volunteer from '../assets/DonationImages/MissiVolunteer.png'
+import Rectangular from '../assets/DonationImages/Rectangle 24.png'
+import DonateImage from '../assets/DonationImages/download 2.png'
+import Donation from '../assets/DonationImages/donation.png'
 
 const BenefitPage = () => {
   return (
