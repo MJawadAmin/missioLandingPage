@@ -8,10 +8,8 @@ import shape1 from "../assets/shape3 1.png";
 
 const Home = () => {
   return (
-<div className="flex justify-center items-center min-h-screen">
-<div className="bg-[rgb(242,246,247)] relative flex flex-col justify-center w-[95%] items-center ml-auto">
-      {/* Decorative Shapes */}
-      <div className="absolute top-10 border-2 border-black left-10">
+<div className="flex ter items-center min-h-screen relative ">
+<div className="absolute top-10">
         <img
           src={supportShape1}
           alt="Support Shape 1"
@@ -25,10 +23,13 @@ const Home = () => {
     className="w-[193px] h-[159px]"
   />
 </div>
+<div className="bg-[rgb(242,246,247)] flex flex-col  w-[95%]  ml-auto">
+      {/* Decorative Shapes */}
+     
 
 
       {/* Content Section */}
-      <div className="container mx-auto border-2 border-black px-4 lg:px-12">
+      <div className="container mx-auto  px-4 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* Text Section */}
           <div className="space-y-6">
