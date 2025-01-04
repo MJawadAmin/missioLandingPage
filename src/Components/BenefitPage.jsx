@@ -3,24 +3,28 @@ import RightImage from '../assets/download1.png'
 import SignImage from '../assets/signImage.png'
 import ButtomRightImage from '../assets/shape8 1.png'
 import { BsCheckCircle } from 'react-icons/bs'
+import Volunteer from '../assets/MissiVolunteer.png'
+import Rectangular from '../assets/Rectangle 24.png'
+import DonateImage from '../assets/download 2.png'
+import Donation from '../assets/Donation.png'
 
 const BenefitPage = () => {
   return (
     <div className="bg-gray-200">
       {/* Parent container with relative positioning */}
-      <div className='relative border h-screen'> {/* Added height to ensure absolute positioning works */}
+      <div className='relative border h-screen flex flex-row'> {/* Added height to ensure absolute positioning works */}
         {/* RightImage positioned absolutely on the right */}
         <div className='absolute right-0 top-0'>
           <img src={RightImage} alt="RightImage" />
         </div>
 
         {/* SignImage positioned slightly below */}
-        <div className='absolute right-[107px] top-28'>
+        <div className='absolute right-[75px] top-16'>
           <img src={SignImage} alt="SignImage" />
         </div>
 
         {/* ButtomRightImage positioned at the bottom-right corner */}
-        <div className='absolute bottom-0 right-0'>
+        <div className='absolute bottom-10 right-20'>
           <img src={ButtomRightImage} alt="ButtomRightImage" />
         </div>
           {/*Main Div Right */}
@@ -54,16 +58,37 @@ Top-notch support and onboarding
       {/* Change the icon color using text-color utility */}
       <BsCheckCircle />
     </div>
-        <p>{" "}Unlimited records, users, forms, and storage</p>
+        <p> Unlimited records, users, forms, and storage </p>
 </div>
 <div> 
     <button className="bg-[rgb(2,100,126)] mr-20 w-[368px] h-[89px] rounded-full text-[22px] text-gray-100 mt-10">Sign Up for lauch Updates</button>
 
     </div>
       </div>
+     
+     {/*   Main Div 2 */}
+      <div className='w-1/2 justify-end relative'>
+      
+      <div className='absolute bottom-32 right-40'>
+        <img src={Volunteer} className='w-[350px] h-[420px]'>
+        </img>
+      </div>
+      <div className='absolute bottom-32 right-40'>
+        <img src={Rectangular} className='w-[350px] h-[420px]'>
+        </img>
+      </div>
+      <div className='absolute top-[70px] right-56'>
+        <img src={DonateImage} className='w-[350px] h-[420px]'></img>
 
-      <div className='w-1/2 justify-end'>
-        {/* Add other content here if needed */}
+      </div>
+      <div className='absolute bottom-28 left-40'>
+        <img src={Donation} alt="" className='h-[80px] w-[250px]' />
+
+      </div>
+
+      
+
+
       </div>
       </div>
 
