@@ -39,21 +39,21 @@ const BenefitPage = () => {
 501(c) software is designed to help you work 
 smarter, not harder</p>
 
-<div className='text-[22px] flex'>
+<div className='text-[22px] flex  gap-5 items-center'>
 <div  className="text-[rgb(2,100,126)]">
       {/* Change the icon color using text-color utility */}
       <BsCheckCircle />
     </div>
 Affordable pricing tailored to nonprofit sizes
 </div>
-<div className='text-[22px] flex'>
-<div  className="text-[rgb(2,100,126)]">
+<div className='text-[22px] flex gap-5 items-center'>
+<div  className="text-[rgb(2,100,126)] gap-5 ">
       {/* Change the icon color using text-color utility */}
       <BsCheckCircle />
     </div>
 Top-notch support and onboarding
 </div>
-<div className='text-[22px] flex flex-row'>
+<div className='text-[22px] flex  items-center gap-5 '>
 <div  className="text-[rgb(2,100,126)]">
       {/* Change the icon color using text-color utility */}
       <BsCheckCircle />
