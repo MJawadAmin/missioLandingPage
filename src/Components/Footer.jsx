@@ -34,9 +34,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-sm">
-            Missio exists to empower small and medium-sized organizations by
-            providing innovative, intuitive software solutions that simplify
-            donor engagement.
+          Missio exists to empower small and medium-sized organizations by providing innovative, intuitive software solutions that simplify donor engagement.
           </p>
         </div>
 

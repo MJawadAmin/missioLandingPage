@@ -23,11 +23,10 @@ const DemoToday = () => {
       <p className=' text-22px '>Encourage users to experience the platform firsthand and offer perks for signing up early.“The best way to understand the power of Missio is to experience it firsthand. Schedule a free demo and enjoy exclusive perks for early sign-ups!</p>
       </div>
       <div className='flex items-center justify-center'>
-        <div className='flex py-36'> 
-          <div className=''> 
-    <button className="bg-white mr-20 w-[200px] h-[69px] rounded-full text-black">Schedule Demo</button>
-    </div>
-    <button className="border-white border-2 mr-20 w-[200px] h-[69px] rounded-full text-white">2nd Botton kkasjd</button>
+        <div className='flex py-24 '> 
+    <button className="bg-white mr-20 w-[300px] h-[69px] rounded-full text-black">Schedule Demo</button>
+    
+    <button className="border-white border-2 mr-20 w-[409px] h-[69px] rounded-full text-white">Get Launch Updates & Exclusive Perks!</button>
     </div>
     </div>
   
