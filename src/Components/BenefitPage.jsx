@@ -19,7 +19,7 @@ const BenefitPage = () => {
         </div>
 
         {/* SignImage positioned slightly below */}
-        <div className='absolute right-[75px] top-16'>
+        <div className='absolute right-[76px] top-16'>
           <img src={SignImage} alt="SignImage" />
         </div>
 
