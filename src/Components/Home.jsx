@@ -58,7 +58,8 @@ const Home = () => {
           </div>
 
           {/* Images Section */}
-          <div className="">
+          <div className="mt-14">
+          <div className=" relative ">
             <div>
               <img
                 src={kids}
@@ -66,7 +67,7 @@ const Home = () => {
                 className="rounded-lg"
               />
             </div>
-            <div className="space-y-4">
+            <div className="absolute bottom-10 ml-80">
               {/* <img
                 src={lady}
                 alt="Kids"
@@ -75,9 +76,9 @@ const Home = () => {
               <img
                 src={shape1}
                 alt="Volunteer"
-                className="rounded-lg"
+                className="rounded-lg "
               />
-            </div>
+            </div></div>
           </div>
         </div>
       </div>
