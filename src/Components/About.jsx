@@ -1,6 +1,8 @@
 import React from "react";
 import Gather from '../assets/gathher.png'
 import Donation from '../assets/donation.png'
+import SideImage from '../assets/shape3 2.png'
+import bottomImage from '../assets/shape1 1.png'
 
 const About = () => {
   return (
@@ -10,10 +12,14 @@ const About = () => {
       <div className="relative w-[487.07px] h-[487.07px] border-2 border-[rgb(2,100,126)] rounded-3xl transform rotate-[-14deg]">
   {/* Child container */}
   <div className="absolute inset-0 transform rotate-[14deg] flex items-center justify-center">
-    <div className="relative w-full h-[95%]">
+    <div> 
+      <img src={bottomImage} alt=""  className="  absolute  left-0 bottom-0"/>
+
+    </div>
+    <div className="absolute w-full h-[95%]">
       {/* Image */}
       <img
-        src={Gather} // Replace with your image URL
+        src={Gather}
         alt="Volunteers working"
         className="rounded-3xl shadow-lg w-full h-full"
       />
@@ -31,7 +37,10 @@ const About = () => {
 
 
       {/* Right Side - Content */}
-      <div className="mt-8 lg:mt-0 lg:ml-44 w-full lg:w-1/2">
+      <div className="mt-8 lg:mt-0 lg:ml-44 w-full lg:w-1/2 relative">
+      <div className=" absolute justify-start right-10 ">
+        <img src={SideImage} alt="" />
+      </div>
         <h2 className="text-teal-600 font-semibold text-sm">About Missio</h2>
         <h1 className="text-gray-900 text-3xl font-bold leading-snug mt-2">
           Missio Powering Purpose <br /> Expanding Impact
