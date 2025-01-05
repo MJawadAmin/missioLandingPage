@@ -1,74 +1,71 @@
-import React from 'react';
-import Facebook from '../../assets/Facebook F.png'
-import Twitter from'../../assets/Twitter.png/'
-import Linedin from '../../assets/LinkedIn 2.png'
-import Logo from '../../assets/logo.png'
-
-
-
-
+import React from "react";
+import Facebook from "../../assets/Facebook F.png";
+import Twitter from "../../assets/Twitter.png/";
+import Linedin from "../../assets/LinkedIn 2.png";
+import Logo from "../../assets/logo.png";
 
 const Navbar = () => {
   return (
     <>
-    <nav>
-        <div className=" flex flex-col">
-       <div className=" h-[70px] bg-[#02647E] flex flex-row items-center text-gray-200">
-        <h1 className='ml-[86px]'>Email: Missio@missio.io</h1>
-        <h1 className="flex-1 text-center text-2xl">Welcome to Missio</h1>
-        <div className='flex flex-row  gap-3 mr-24 items-center'>
-             <h1 className='text-lg'> Follow:</h1>
-            
-            <a
-  href=""
-  className="w-[34px] h-[33.86px] bg-[rgb(75,139,156)] rounded-md flex items-center justify-center"
->
-  <img src={Facebook} alt="" className="w-[20px] h-[20px]" />
-</a>
+      <nav>
+        <div className="flex flex-col">
+          {/* Top Bar */}
+          <div className="h-[70px] bg-[#02647E] flex flex-col sm:flex-row items-center text-gray-200 px-4 sm:px-8">
+            <h1 className="text-sm sm:text-base sm:ml-[86px] mb-2 sm:mb-0">
+              Email: Missio@missio.io
+            </h1>
+            <h1 className="flex-1 text-center text-base sm:text-2xl">
+              Welcome to Missio
+            </h1>
+            <div className="flex flex-row gap-3 mt-2 sm:mt-0 sm:mr-24 items-center">
+              <h1 className="text-sm sm:text-lg">Follow:</h1>
+              <a
+                href="#"
+                className="w-[30px] sm:w-[34px] h-[30px] sm:h-[33.86px] bg-[rgb(75,139,156)] rounded-md flex items-center justify-center"
+              >
+                <img src={Facebook} alt="Facebook" className="w-[16px] sm:w-[20px] h-[16px] sm:h-[20px]" />
+              </a>
+              <a
+                href="#"
+                className="w-[30px] sm:w-[34px] h-[30px] sm:h-[33.86px] bg-[rgb(75,139,156)] rounded-md flex items-center justify-center"
+              >
+                <img src={Twitter} alt="Twitter" className="w-[16px] sm:w-[20px] h-[16px] sm:h-[20px]" />
+              </a>
+              <a
+                href="#"
+                className="w-[30px] sm:w-[34px] h-[30px] sm:h-[33.86px] bg-[rgb(75,139,156)] rounded-md flex items-center justify-center"
+              >
+                <img src={Linedin} alt="LinkedIn" className="w-[16px] sm:w-[20px] h-[16px] sm:h-[20px]" />
+              </a>
+            </div>
+          </div>
 
-<a
-  href=""
-  className="w-[34px] h-[33.86px] bg-[rgb(75,139,156)] rounded-md flex items-center justify-center"
->
-  <img src={Twitter} alt="" className="w-[20px] h-[20px]" />
-</a>
-<a
-  href=""
-  className="w-[34px] h-[33.86px] bg-[rgb(75,139,156)] rounded-md flex items-center justify-center"
->
-  <img src={Linedin} alt="" className="w-[20px] h-[20px]" />
-</a>
+          {/* Main Navbar */}
+          <div className="bg-white border-t border-gray-200 h-auto sm:h-[158px] flex flex-col sm:flex-row items-center sm:justify-between px-4 sm:px-8 py-4">
+            {/* Logo */}
+            <div className="mb-4 sm:mb-0">
+              <img src={Logo} alt="Logo" className="w-[180px] sm:w-[240px] h-auto sm:h-[84px] mx-auto sm:ml-[80px]" />
+            </div>
 
+            {/* Navigation Links */}
+            <ul className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8 lg:space-x-14 text-sm sm:text-lg">
+              <li className="hover:text-[#02647E] cursor-pointer">Home</li>
+              <li className="hover:text-[#02647E] cursor-pointer">About Us</li>
+              <li className="hover:text-[#02647E] cursor-pointer">Solutions</li>
+              <li className="hover:text-[#02647E] cursor-pointer">Industries</li>
+              <li className="hover:text-[#02647E] cursor-pointer">Blogs</li>
+              <li className="hover:text-[#02647E] cursor-pointer">Contact Us</li>
+            </ul>
+
+            {/* Button */}
+            <div className="mt-4 sm:mt-0">
+              <button className="bg-[rgb(2,100,126)] w-[150px] sm:w-[200px] h-[50px] sm:h-[69px] rounded-full text-gray-100 text-sm sm:text-base font-semibold hover:bg-teal-600">
+                Schedule Demo
+              </button>
+            </div>
+          </div>
         </div>
-       </div>
-
-
-
-
-<div className=" bg-[rgb(255,255,255)] border-black h-[158px] flex flex-row items-center justify-between  ">
-    <div className="">
-    <img src={Logo} alt=""  className='w-[240px] h-[84px] ml-[80px] justify-center '/>
-    </div>
-    <div className=" flex items-center ">
-    <ul className="flex items-center justify-center text-lg space-x-14">
-        <li className="">Home</li>
-        <li className="">About Us</li>
-        <li className="">Solutions</li>
-        <li className="">Industries</li>
-        <li className="">Blogs</li>
-        <li className="">Contact Us</li>
-    </ul>
-   
-    </div>
-    <div> 
-    <button className="bg-[rgb(2,100,126)] mr-20 w-[200px] h-[69px] rounded-full text-gray-100">Schedule Demo</button>
-
-    </div>
- 
-</div>
-
-        </div>
-    </nav>
+      </nav>
     </>
   );
 };

@@ -1,38 +1,47 @@
-import React from 'react'
-import AckcelImage from '../assets/akcelImage.png'
-import HeartImagea from '../assets/HeartImage.png'
-import UnityImage from '../assets/UnityImage.png'
+import React from 'react';
+import AckcelImage from '../assets/akcelImage.png';
+import HeartImagea from '../assets/HeartImage.png';
+import UnityImage from '../assets/UnityImage.png';
 
 const DemoToday = () => {
   return (
-    <div className='bg-[rgb(2,100,126)] h-[60vh] relative'>
-{/* Absolute Image */}
-<div className='absolute left-5 bottom-0 '>
-<img src={AckcelImage} alt="" />
-</div>
-<div className='absolute top-10 right-10'>
-  <img src={HeartImagea} alt="" />
-</div>
-<div className='absolute bottom-0 right-0'>
-  <img src={UnityImage} alt="" />
-</div>
-
-
-      <div  className=' text-white  text-center px-96'>
-      <h1 className='text-[38px] text-bold'>See It to Believe It – Reserve Your Demo Today</h1>
-      <p className=' text-22px '>Encourage users to experience the platform firsthand and offer perks for signing up early.“The best way to understand the power of Missio is to experience it firsthand. Schedule a free demo and enjoy exclusive perks for early sign-ups!</p>
+    <div className="bg-[rgb(2,100,126)] min-h-[60vh] relative">
+      {/* Absolute Images */}
+      <div className="absolute left-5 bottom-0">
+        <img src={AckcelImage} alt="Ackcel" className="w-[100px] lg:w-auto" />
       </div>
-      <div className='flex items-center justify-center'>
-        <div className='flex py-24 '> 
-    <button className="bg-white mr-20 w-[300px] h-[69px] rounded-full text-black">Schedule Demo</button>
-    
-    <button className="border-white border-2 mr-20 w-[409px] h-[69px] rounded-full text-white">Get Launch Updates & Exclusive Perks!</button>
-    </div>
-    </div>
-  
-    
-    </div>
-  )
-}
+      <div className="absolute top-10 right-10">
+        <img src={HeartImagea} alt="Heart" className="w-[100px] lg:w-auto" />
+      </div>
+      <div className="absolute bottom-0 right-0">
+        <img src={UnityImage} alt="Unity" className="w-[100px] lg:w-auto" />
+      </div>
 
-export default DemoToday
+      {/* Content Section */}
+      <div className="text-white text-center px-6 lg:px-96">
+        <h1 className="text-[24px] lg:text-[38px] font-bold">
+          See It to Believe It – Reserve Your Demo Today
+        </h1>
+        <p className="text-[14px] lg:text-[22px] mt-4">
+          Encourage users to experience the platform firsthand and offer perks for signing up early. 
+          “The best way to understand the power of Missio is to experience it firsthand. Schedule a 
+          free demo and enjoy exclusive perks for early sign-ups!
+        </p>
+      </div>
+
+      {/* Buttons Section */}
+      <div className="flex items-center justify-center mt-8 lg:mt-24">
+        <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-20">
+          <button className="bg-white w-[200px] lg:w-[300px] h-[50px] lg:h-[69px] rounded-full text-black">
+            Schedule Demo
+          </button>
+          <button className="border-white border-2 w-[250px] lg:w-[409px] h-[50px] lg:h-[69px] rounded-full text-white">
+            Get Launch Updates & Exclusive Perks!
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default DemoToday;
