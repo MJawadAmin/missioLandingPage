@@ -69,7 +69,7 @@ const Home = () => {
                 <img
                   src={shape1}
                   alt="Volunteer"
-                  className="rounded-lg w-[80px] sm:w-[100px] lg:w-auto lg:mr-72"
+                  className="rounded-lg w-[35px] mr-20 sm:w-[100px] lg:w-auto md: lg:mr-72"
                 />
               </div>
             </div>
