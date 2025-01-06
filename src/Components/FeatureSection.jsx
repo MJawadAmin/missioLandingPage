@@ -25,19 +25,17 @@ const FeaturesSection = () => {
       </div>
 
       {/* Heading Section */}
-      <div className="px-6 lg:px-20 flex flex-col lg:flex-row gap-10 relative z-10">
-        <div className="mb-12 w-full lg:w-[40%]">
+      <div className="px-6 lg:px-20 flex flex-col lg:flex-row justify-between gap-10 relative z-10">
+        <div className="mb-12 w-full lg:w-[35%]">
           <h2 className="text-sm uppercase font-semibold tracking-wide">Core Features</h2>
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2">
             Empowering Non-Profits with Tools to Thrive
           </h1>
-          <p className="text-base sm:text-lg mt-4">
-            Missio's new software empowers 501(c) non-profits to work smarter and expand their reach.
-          </p>
+          
         </div>
-        <div className="w-full lg:w-[60%] mt-4 lg:mt-0">
+        <div className="w-full lg:w-[35%] mt-4 lg:mr-16 lg:mt-0">
           <hr className="bg-[rgb(56,133,153)] w-full lg:w-[536px]" />
-          <p className="mt-6 text-sm sm:text-base lg:text-lg lg:w-[536px]">
+          <p className="mt-6 text-sm sm:text-base lg:text-[22px] lg:w-[536px]">
             Missio’s new software empowers 501(c) non-profits to work smarter and expand their reach.
           </p>
         </div>
