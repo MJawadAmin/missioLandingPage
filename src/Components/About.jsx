@@ -16,9 +16,9 @@ const About = () => {
                 className="absolute left-0 bottom-14 lg:bottom-32 w-20 sm:w-32 lg:w-auto"
               />
             </div>
-        <div className="absolute ml-[96px] mt-12  w-[280px] sm:w-[360px] lg:w-[450.07px] h-[280px] sm:h-[360px] lg:h-[450.07px] border-2 border-[rgb(2,100,126)] rounded-3xl transform rotate-[-14deg]">
+        <div className="absolute ml-10 lg:ml-[96px] mt-12  w-[250px] sm:w-[360px] lg:w-[450.07px] h-[250px] sm:h-[360px] lg:h-[450.07px] border-2 border-[rgb(2,100,126)] rounded-3xl transform rotate-[-14deg]">
           </div>
-          <div className="relative w-full mt-10 ml-8  ">
+          <div className="relative w-full mt-10 md:ml-0 lg:ml-8  ">
               {/* Image */}
               <img
                 src={Gather}
