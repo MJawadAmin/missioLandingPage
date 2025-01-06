@@ -61,7 +61,7 @@ const Navbar = () => {
             <ul
               className={`${
                 isMenuOpen ? "flex" : "hidden"
-              } flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8 lg:space-x-14 text-sm sm:text-lg sm:block`}
+              } flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8 lg:space-x-14 text-sm sm:text-lg sm:flex`}
             >
               <li className="hover:text-[#02647E] cursor-pointer">Home</li>
               <li className="hover:text-[#02647E] cursor-pointer">About Us</li>
