@@ -51,7 +51,7 @@ const CountdownTimerPage = () => {
       </div>
 
       {/* Days Content Carousel */}
-      <div className="py-6">
+      <div className="py-6 lg:px-20">
         <Swiper
           slidesPerView={1}
           spaceBetween={20}

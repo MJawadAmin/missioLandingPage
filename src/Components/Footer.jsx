@@ -4,6 +4,10 @@ import TopLeft from '../assets/Vector.png';
 import TopRight from '../assets/TopRight.png';
 import BottomLeft from '../assets/BottomLeft.png';
 import BottomRight from '../assets/BottomRight.png';
+import LocationImage from '../assets/FooterImages/Near Me.png'
+import Email from '../assets/FooterImages/At sign.png'
+import Call from '../assets/FooterImages/Phone.png'
+
 
 const Footer = () => {
   return (
@@ -23,7 +27,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Content */}
-      <div className="container mx-auto flex flex-wrap justify-between px-6 lg:px-20 gap-10">
+      <div className="container mx-auto flex flex-wrap justify-between px-6 lg:px-52 gap-20">
         {/* Left Section */}
         <div className="w-full lg:w-1/4">
           <div className="flex items-center gap-4 mb-4">
@@ -32,7 +36,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-sm">
-            Missio exists to empower small and medium-sized organizations by providing innovative, intuitive software solutions that simplify donor engagement.
+          Missio exists to empower small and medium-sized organizations by providing innovative, intuitive software solutions that simplify donor engagement
           </p>
         </div>
 
@@ -86,26 +90,27 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
-
-        {/* Right Section */}
-        <div className="w-full lg:w-1/4">
-          <h2 className="font-bold mb-4">Address</h2>
+          <div className="w-full lg:w-1/2 lg:ml-32">
+          <h2 className="font-bold mb-4 text-center">Address</h2>
           <ul className="space-y-4 text-sm">
             <li className="flex items-start gap-2">
-              <span className="material-icons-outlined">location_on</span>
-              373 Broadway Suite B17, New York, New York 10013
+            <span className="material-icons-outlined"><img src={LocationImage} alt="" /></span>
+            373 Broadway Suite B17, New York, New York 10013
             </li>
             <li className="flex items-start gap-2">
-              <span className="material-icons-outlined">email</span>
+              <span className="material-icons-outlined"><img src={Email} alt="" /></span>
               missio@missio.io
             </li>
             <li className="flex items-start gap-2">
-              <span className="material-icons-outlined">phone</span>
+              <span className="material-icons-outlined"><img src={Call} alt="" /></span>
               (844) 568-0941
             </li>
           </ul>
         </div>
+        </div>
+
+        
+        
       </div>
     </div>
   );
