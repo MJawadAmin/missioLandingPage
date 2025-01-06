@@ -88,7 +88,26 @@ const FeaturesSection = () => {
             <div className="bg-white text-teal-800 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
               <img src={Group4} alt="Automated Compliance" className="mb-4 w-16 sm:w-20 lg:w-auto" />
               <h3 className="text-lg font-bold mb-2">Automated Compliance</h3>
-              <p className="text-sm">Streamlined reporting with compliance support.</p>
+              <p className="text-sm">Streamlined reporting with compliance support and reporting with compliance support.</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="bg-white text-teal-800 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+              <img src={Group1} alt="Donor Management" className="mb-4 w-16 sm:w-20 lg:w-auto" />
+              <h3 className="text-lg font-bold mb-2">Donor Management</h3>
+              <p className="text-sm">Strengthen relationships and increase donations.</p>
+            </div>
+          </SwiperSlide> <SwiperSlide>
+            <div className="bg-white text-teal-800 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+              <img src={Group1} alt="Donor Management" className="mb-4 w-16 sm:w-20 lg:w-auto" />
+              <h3 className="text-lg font-bold mb-2">Donor Management</h3>
+              <p className="text-sm">Strengthen relationships and increase donations.</p>
+            </div>
+          </SwiperSlide> <SwiperSlide>
+            <div className="bg-white text-teal-800 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+              <img src={Group1} alt="Donor Management" className="mb-4 w-16 sm:w-20 lg:w-auto" />
+              <h3 className="text-lg font-bold mb-2">Donor Management</h3>
+              <p className="text-sm">Strengthen relationships and increase donations.</p>
             </div>
           </SwiperSlide>
         </Swiper>
