@@ -20,7 +20,8 @@ function App() {
     <Home/>
     <About/>
     <FeaturesSection/>
-    <BenefitPage/>
+  
+ <BenefitPage/> 
     <DemoToday/>
     <CountdownTimerPage/>
     <Testimonial/>

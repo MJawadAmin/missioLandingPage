@@ -1,4 +1,9 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import RightImage from '../assets/DonationImages/download1.png';
 import SignImage from '../assets/DonationImages/signImage.png';
 import ButtomRightImage from '../assets/DonationImages/shape8 1.png';
@@ -19,7 +24,7 @@ const BenefitPage = () => {
         </div>
 
         {/* SignImage positioned slightly below */}
-        <div className="absolute right-[20px] lg:right-[76px] top-10 lg:top-16 hidden lg:block">
+        <div className="absolute right-[10px] lg:right-[76px] top-10 lg:top-16 hidden lg:block">
           <img src={SignImage} alt="SignImage" className="w-auto h-auto" />
         </div>
 
@@ -66,17 +71,47 @@ const BenefitPage = () => {
 
         {/* Main Div Right */}
         <div className="w-full lg:w-1/2 relative mt-10 lg:mt-0">
-          <div className="absolute bottom-10 lg:bottom-32 right-10 lg:right-40">
-            <img src={Volunteer} alt="Volunteer" className="w-[200px] lg:w-[350px] h-[250px] lg:h-[420px]" />
+          {/* Carousel for md devices */}
+          <div className="block md:hidden">
+            <Swiper
+              spaceBetween={30}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              loop
+            >
+              <SwiperSlide>
+                <div className="relative">
+                  <img src={Volunteer} alt="Volunteer" className="absolute bottom-0 right-10 w-[250px]" />
+                  <img src={Rectangular} alt="Rectangular" className="absolute bottom-0 left-10 w-[250px]" />
+                  <img src={DonateImage} alt="DonateImage" className="absolute top-0 right-20 w-[250px]" />
+                  <img src={Donation} alt="Donation" className="absolute bottom-10 left-20 w-[200px]" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="relative">
+                  <img src={Volunteer} alt="Volunteer" className="absolute bottom-0 right-10 w-[250px]" />
+                  <img src={Rectangular} alt="Rectangular" className="absolute bottom-0 left-10 w-[250px]" />
+                  <img src={DonateImage} alt="DonateImage" className="absolute top-0 right-20 w-[250px]" />
+                  <img src={Donation} alt="Donation" className="absolute bottom-10 left-20 w-[200px]" />
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
-          <div className="absolute bottom-10 lg:bottom-32 right-10 lg:right-40">
-            <img src={Rectangular} alt="Rectangular" className="w-[200px] lg:w-[350px] h-[250px] lg:h-[420px]" />
-          </div>
-          <div className="absolute top-10 lg:top-[70px] right-10 lg:right-56">
-            <img src={DonateImage} alt="DonateImage" className="w-[200px] lg:w-[350px] h-[250px] lg:h-[420px]" />
-          </div>
-          <div className="absolute bottom-10 lg:bottom-28 left-10 lg:left-40">
-            <img src={Donation} alt="Donation" className="w-[180px] lg:w-[250px] h-[60px] lg:h-[80px]" />
+
+          {/* Static images for lg devices */}
+          <div className="hidden md:block">
+            <div className="absolute bottom-10 lg:bottom-32 right-10 lg:right-40">
+              <img src={Volunteer} alt="Volunteer" className="w-[200px] lg:w-[350px] h-[250px] lg:h-[420px]" />
+            </div>
+            <div className="absolute bottom-10 lg:bottom-32 right-10 lg:right-40">
+              <img src={Rectangular} alt="Rectangular" className="w-[200px] lg:w-[350px] h-[250px] lg:h-[420px]" />
+            </div>
+            <div className="absolute top-10 lg:top-[70px] right-10 lg:right-56">
+              <img src={DonateImage} alt="DonateImage" className="w-[200px] lg:w-[350px] h-[250px] lg:h-[420px]" />
+            </div>
+            <div className="absolute bottom-10 lg:bottom-28 left-10 lg:left-40">
+              <img src={Donation} alt="Donation" className="w-[180px] lg:w-[250px] h-[60px] lg:h-[80px]" />
+            </div>
           </div>
         </div>
       </div>

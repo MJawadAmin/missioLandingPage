@@ -2,6 +2,8 @@ import React from 'react';
 import Image1 from '../assets/dottedArrowImage.png';
 import Image2 from '../assets/download2.png';
 import Image3 from '../assets/UnityImage.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const CountdownTimerPage = () => {
   return (
@@ -48,26 +50,46 @@ const CountdownTimerPage = () => {
         </div>
       </div>
 
-      {/* Days Content */}
-      <div className="flex flex-wrap justify-center lg:justify-between items-center px-4 lg:px-40 py-6 gap-4">
-        <div className="w-[90%] max-w-[300px] h-[200px] border-[rgb(2,100,126)] bg-white border-2 rounded-lg flex flex-col justify-center items-center">
-          <h1 className="text-[24px] lg:text-[40px]">Day 1</h1>
-          <p className="text-[12px] lg:text-[15px] px-4 lg:px-8">
-            Unlock a New Era of Donor Engagement!
-          </p>
-        </div>
-        <div className="w-[90%] max-w-[300px] h-[200px] border-[rgb(2,100,126)] bg-white border-2 rounded-lg flex flex-col justify-center items-center">
-          <h1 className="text-[24px] lg:text-[40px]">Day 2</h1>
-          <p className="text-[12px] lg:text-[15px] px-4 lg:px-8">
-            Boost Your Efficiency and Free Up More Time for Your Mission!
-          </p>
-        </div>
-        <div className="w-[90%] max-w-[300px] h-[200px] border-[rgb(2,100,126)] bg-white border-2 rounded-lg flex flex-col justify-center items-center">
-          <h1 className="text-[24px] lg:text-[40px]">Day 3</h1>
-          <p className="text-[12px] lg:text-[15px] px-4 lg:px-8">
-            Last Chance to Be First in Line!
-          </p>
-        </div>
+      {/* Days Content Carousel */}
+      <div className="py-6">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={20}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {/* Day 1 */}
+          <SwiperSlide>
+            <div className="w-[90%] max-w-[300px] h-[200px] border-[rgb(2,100,126)] bg-white border-2 rounded-lg flex flex-col justify-center items-center mx-auto">
+              <h1 className="text-[24px] lg:text-[40px]">Day 1</h1>
+              <p className="text-[12px] lg:text-[15px] px-4 lg:px-8">
+                Unlock a New Era of Donor Engagement!
+              </p>
+            </div>
+          </SwiperSlide>
+
+          {/* Day 2 */}
+          <SwiperSlide>
+            <div className="w-[90%] max-w-[300px] h-[200px] border-[rgb(2,100,126)] bg-white border-2 rounded-lg flex flex-col justify-center items-center mx-auto">
+              <h1 className="text-[24px] lg:text-[40px]">Day 2</h1>
+              <p className="text-[12px] lg:text-[15px] px-4 lg:px-8">
+                Boost Your Efficiency and Free Up More Time for Your Mission!
+              </p>
+            </div>
+          </SwiperSlide>
+
+          {/* Day 3 */}
+          <SwiperSlide>
+            <div className="w-[90%] max-w-[300px] h-[200px] border-[rgb(2,100,126)] bg-white border-2 rounded-lg flex flex-col justify-center items-center mx-auto">
+              <h1 className="text-[24px] lg:text-[40px]">Day 3</h1>
+              <p className="text-[12px] lg:text-[15px] px-4 lg:px-8">
+                Last Chance to Be First in Line!
+              </p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );
