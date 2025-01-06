@@ -34,12 +34,12 @@ const Testimonial = () => {
             <img
               src={MainDivImage1}
               alt="Testimonial"
-              className="w-full lg:w-[407px] h-auto lg:h-[450px] rounded-lg object-cover"
+              className="w-full lg:w-[350px] h-auto lg:h-[390px] rounded-lg object-cover"
             />
           </div>
 
           {/* Right Section */}
-          <div className="flex-1 text-center lg:text-left mt-6 lg:mt-0">
+          <div className="flex-1 text-center lg:text-left mt-6 lg:mt-20">
             <div className="flex justify-center lg:justify-start gap-2">
               <img src={Vector} alt="Vector Icon" />
               <img src={Vector} alt="Vector Icon" />
@@ -70,10 +70,8 @@ const Testimonial = () => {
             <p className="mt-4 font-bold text-lg">Amit Singhania</p>
             <p className="text-gray-500">CEO Of Missio</p>
           </div>
-        </div>
-
-        {/* Navigation Buttons */}
-        <div className="absolute bottom-4 right-4 flex gap-4">
+           {/* Navigation Buttons */}
+        <div className="lg:absolute md:justify-center md:items-center bottom-10 right-28 flex gap-4">
           <button className="w-8 h-8 lg:w-10 lg:h-10 flex justify-center items-center bg-[rgb(2,100,126)] text-white rounded-full">
             &#8592;
           </button>
@@ -81,6 +79,9 @@ const Testimonial = () => {
             &#8594;
           </button>
         </div>
+        </div>
+
+       
       </div>
     </div>
   );
