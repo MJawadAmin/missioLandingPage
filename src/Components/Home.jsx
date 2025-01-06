@@ -7,9 +7,9 @@ import shape1 from "../assets/shape3 1.png";
 
 const Home = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center min-h-screen relative">
+    <div className="flex flex-col lg:flex-row items-center min-h-screen lg:mt-[-25px]">
       {/* Top Left Decorative Shape */}
-      <div className="absolute top-10 left-4">
+      <div className="absolute top-48 left-4">
         <img
           src={supportShape1}
           alt="Support Shape 1"
@@ -18,21 +18,21 @@ const Home = () => {
       </div>
 
       {/* Bottom Left Decorative Shape */}
-      <div className="absolute bottom-10 left-4">
+      <div className="absolute bottom-[-120px] left-4">
         <img
           src={supportShape2}
           alt="Support Shape 2"
-          className="w-[120px] h-[100px] sm:w-[150px] sm:h-[130px] lg:w-[193px] lg:h-[159px]"
+          className="w-[100px] h-[50px] sm:w-[150px] sm:h-[130px] lg:w-[200px] lg:h-[130px] lg:ml-6"
         />
       </div>
 
       {/* Main Container */}
-      <div className="bg-[rgb(242,246,247)] flex flex-col w-[95%] mx-auto">
+      <div className="bg-[rgb(242,246,247)] flex flex-col w-[95%] lg:h-[634px] mx-auto">
         <div className="container mx-auto px-4 sm:px-8 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-2 items-center">
             {/* Text Section */}
             <div className="space-y-6 text-center lg:text-left">
-              <h1 className="font-extrabold text-[30px] sm:text-[35px] lg:text-[45px] leading-tight text-gray-800">
+              <h1 className="font-bold text-[30px] sm:text-[35px] lg:text-[45px] leading-tight text-gray-800">
                 <span className="bg-[rgb(2,100,126)] text-transparent bg-clip-text">
                   Count Down
                 </span>{" "}
@@ -59,7 +59,7 @@ const Home = () => {
             </div>
 
             {/* Images Section */}
-            <div className="mt-10 sm:mt-14 relative flex justify-center lg:block">
+            <div className="mt-10 sm:mt-14 relative flex justify-center  lg:block lg:[40%]">
               <img
                 src={kids}
                 alt="Donate"

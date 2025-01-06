@@ -20,7 +20,7 @@ const Navbar = ({ onNavigate }) => {
             <h1 className="flex-1 text-center text-base sm:text-2xl">
               Welcome to Missio
             </h1>
-            <div className="flex flex-row gap-3 mt-2 sm:mt-0 sm:mr-24 items-center">
+            <div className="flex flex-row gap-3 mt-2 sm:mt-0 sm:mr-24 lg:mr-[90px] items-center">
               <h1 className="text-sm sm:text-lg">Follow:</h1>
               <a
                 href="#"
@@ -56,13 +56,13 @@ const Navbar = ({ onNavigate }) => {
           </div>
 
           {/* Main Navbar */}
-          <div className="bg-white border-t border-gray-200 h-auto sm:h-[158px] flex flex-col sm:flex-row items-center sm:justify-between px-4 sm:px-8 py-4 relative">
+          <div className="bg-white border-t border-gray-200 h-auto flex flex-col sm:flex-row items-center sm:justify-between px-4 sm:px-8 py-4 relative">
             {/* Logo */}
-            <div className="mb-4 sm:mb-0">
+            <div className="mb-4 sm:mb-0 ">
               <img
                 src={Logo}
                 alt="Logo"
-                className="w-[180px] sm:w-[240px] h-auto sm:h-[84px] mx-auto sm:ml-[80px]"
+                className="w-[180px] sm:w-[240px] h-auto sm:h-[84px] mx-auto sm:ml-[50px]"
               />
             </div>
 
@@ -123,7 +123,7 @@ const Navbar = ({ onNavigate }) => {
                 isMenuOpen ? 'flex' : 'hidden'
               } mt-4 sm:mt-0 sm:block`}
             >
-              <button className="bg-[rgb(2,100,126)] w-[150px] sm:w-[200px] h-[50px] sm:h-[69px] rounded-full text-gray-100 text-sm sm:text-base font-semibold hover:bg-teal-600">
+              <button className="bg-[rgb(2,100,126)] lg:mr-[100px] w-[150px] sm:w-[200px] h-[50px] sm:h-[69px] rounded-full text-gray-100 text-sm sm:text-base font-semibold hover:bg-teal-600">
                 Schedule Demo
               </button>
             </div>
