@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import supportShape1 from "../assets/support-shape-hand-1-1 1.png";
 import supportShape2 from "../assets/support-shape-hand-1-2 1.png";
 import kids from "../assets/ymr-img-1-min 1@2x.png";
@@ -6,34 +6,6 @@ import lady from "../assets/lady.png";
 import shape1 from "../assets/shape3 1.png";
 
 const Home = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  // Dummy carousel data
-  const carouselItems = [
-    {
-      img: kids,
-      alt: "Kids Image",
-    },
-    {
-      img: lady,
-      alt: "Lady Image",
-    },
-    {
-      img: shape1,
-      alt: "Shape Image",
-    },
-  ];
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % carouselItems.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(
-      (prev) => (prev - 1 + carouselItems.length) % carouselItems.length
-    );
-  };
-
   return (
     <div className="flex flex-col lg:flex-row items-center min-h-screen lg:mt-[-25px]">
       {/* Top Left Decorative Shape */}
@@ -68,7 +40,8 @@ const Home = () => {
                 <span className="bg-[rgb(2,100,126)] text-transparent bg-clip-text">
                   Non
                 </span>
-                -<span className="bg-[rgb(2,100,126)] text-transparent bg-clip-text">
+                -
+                <span className="bg-[rgb(2,100,126)] text-transparent bg-clip-text">
                   Profit’s
                 </span>{" "}
                 Impact – Launching{" "}
@@ -85,28 +58,19 @@ const Home = () => {
               </button>
             </div>
 
-            {/* Carousel Section */}
-            <div className="mt-10 sm:mt-14 relative flex justify-center lg:block lg:w-[40%]">
-              <div className="relative">
+            {/* Images Section */}
+            <div className="mt-10 sm:mt-14 relative flex justify-center  lg:block lg:[40%]">
+              <img
+                src={kids}
+                alt="Donate"
+                className="rounded-lg w-[280px] sm:w-[400px] lg:w-auto"
+              />
+              <div className="absolute bottom-4 sm:bottom-10 right-10 lg:right-0">
                 <img
-                  src={carouselItems[currentSlide].img}
-                  alt={carouselItems[currentSlide].alt}
-                  className="rounded-lg w-[280px] sm:w-[400px] lg:w-auto"
+                  src={shape1}
+                  alt="Volunteer"
+                  className="rounded-lg w-[35px] mr-20 sm:w-[100px] lg:w-auto md: lg:mr-72"
                 />
-                {/* Left Arrow */}
-                <button
-                  onClick={prevSlide}
-                  className="absolute top-[50%] left-[-20px] transform -translate-y-1/2 text-[rgb(2,100,126)] bg-white border-2 border-gray-300 rounded-full p-2 hover:bg-gray-100"
-                >
-                  &#8592;
-                </button>
-                {/* Right Arrow */}
-                <button
-                  onClick={nextSlide}
-                  className="absolute top-[50%] right-[-20px] transform -translate-y-1/2 text-[rgb(2,100,126)] bg-white border-2 border-gray-300 rounded-full p-2 hover:bg-gray-100"
-                >
-                  &#8594;
-                </button>
               </div>
             </div>
           </div>
