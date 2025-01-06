@@ -10,6 +10,7 @@ import CountdownTimerPage from './Components/CountdownTimerPage';
 import Testimonial from './Components/Testimonial';
 import Footer from './Components/Footer';
 
+
 function App() {
   const scrollToSection = (id) => {
     console.log('ID', id);

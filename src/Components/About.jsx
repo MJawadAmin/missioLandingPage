@@ -8,10 +8,10 @@ const About = () => {
   return (
     <div className="bg-white mt-10 px-6 lg:px-20 flex flex-col lg:flex-row items-center lg:items-start">
       {/* Left Side - Image and Experience Box */}
-      <div className="lg:w-1/2 lg:mr-10 flex justify-center lg:justify-start">
+      <div className="lg:w-1/2 lg:mr-10 lg:flex justify-center lg:justify-start">
         <div className="relative w-[280px] sm:w-[360px] lg:w-[487.07px] h-[280px] sm:h-[360px] lg:h-[487.07px] border-2 border-[rgb(2,100,126)] rounded-3xl transform rotate-[-14deg]">
           {/* Child container */}
-          <div className="absolute inset-0 transform rotate-[14deg] flex items-center justify-center">
+          <div className="absolute inset-0 transform rotate-[14deg] flex items-center w-full justify-center">
             <div>
               <img
                 src={bottomImage}
@@ -19,7 +19,7 @@ const About = () => {
                 className="absolute left-0 bottom-0 w-20 sm:w-32 lg:w-auto"
               />
             </div>
-            <div className="absolute w-full h-[95%]">
+            <div className="absolute w-full h-[95%]  ">
               {/* Image */}
               <img
                 src={Gather}
@@ -40,7 +40,7 @@ const About = () => {
       </div>
 
       {/* Right Side - Content */}
-      <div className="mt-8 lg:mt-0 lg:ml-20 w-full lg:w-1/2 relative">
+      <div className="mt-8 lg:mt-0 lg:ml-20 w-full lg:w-1/2 relative ">
         <div className="absolute justify-start lg:right-4 hidden lg:block  ">
           <img src={SideImage} alt="" className="w-20  lg:w-auto" />
         </div>
