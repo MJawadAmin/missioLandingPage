@@ -5,9 +5,9 @@ import UnityImage from '../assets/UnityImage.png';
 
 const DemoToday = () => {
   return (
-    <div className="bg-[rgb(2,100,126)] min-h-[60vh] relative">
+    <div className="bg-[rgb(2,100,126)] min-h-[60vh] relative py-20">
       {/* Absolute Images */}
-      <div className="absolute left-5 bottom-0">
+      <div className="absolute left-0 lg:left-5 bottom-0">
         <img src={AckcelImage} alt="Ackcel" className="w-[100px] lg:w-auto" />
       </div>
       <div className="absolute top-10 right-10">
@@ -32,10 +32,10 @@ const DemoToday = () => {
       {/* Buttons Section */}
       <div className="flex items-center justify-center mt-8 lg:mt-24">
         <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-20">
-          <button className="bg-white w-[200px] lg:w-[300px] h-[50px] lg:h-[69px] rounded-full text-black">
+          <button className="bg-white w-[200px] lg:w-[300px] h-[50px] lg:h-[69px]  lg:text-[18px] rounded-full text-black">
             Schedule Demo
           </button>
-          <button className="border-white border-2 w-[250px] lg:w-[409px] h-[50px] lg:h-[69px] rounded-full text-white">
+          <button className="border-white text-xs lg:text-[18px] border-2 w-[200px] lg:w-[409px] h-[50px] lg:h-[69px] rounded-full text-white">
             Get Launch Updates & Exclusive Perks!
           </button>
         </div>

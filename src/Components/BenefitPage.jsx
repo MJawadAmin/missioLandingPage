@@ -34,7 +34,7 @@ const BenefitPage = () => {
         </div>
 
         {/* Main Div Left */}
-        <div className="w-full lg:w-1/2 px-6 py-10 lg:px-20 lg:py-20">
+        <div className="w-full lg:w-1/2 px-6 py-10 lg:px-20 lg:py-10">
           <h1 className="text-[18px] lg:text-[24px] bg-[rgb(2,100,126)] text-transparent bg-clip-text">
             benefits for non-profit
           </h1>
@@ -62,8 +62,8 @@ const BenefitPage = () => {
           </div>
 
           {/* Sign-Up Button */}
-          <div className="mt-10">
-            <button className="bg-[rgb(2,100,126)] w-full lg:w-[368px] h-[60px] lg:h-[89px] rounded-full text-[18px] lg:text-[22px] text-gray-100">
+          <div className="mt-6">
+            <button className="bg-[rgb(2,100,126)] w-full lg:w-[300px] h-[60px] lg:h-[69px] rounded-full text-[18px] lg:text-[18px] text-gray-100">
               Sign Up for Launch Updates
             </button>
           </div>
@@ -80,37 +80,33 @@ const BenefitPage = () => {
               loop
             >
               <SwiperSlide>
-                <div className="relative">
-                  <img src={Volunteer} alt="Volunteer" className="absolute bottom-0 right-10 w-[250px]" />
-                  <img src={Rectangular} alt="Rectangular" className="absolute bottom-0 left-10 w-[250px]" />
-                  <img src={DonateImage} alt="DonateImage" className="absolute top-0 right-20 w-[250px]" />
-                  <img src={Donation} alt="Donation" className="absolute bottom-10 left-20 w-[200px]" />
-                </div>
+                <img src={Volunteer} alt="Volunteer" className="w-[250px] mx-auto" />
               </SwiperSlide>
               <SwiperSlide>
-                <div className="relative">
-                  <img src={Volunteer} alt="Volunteer" className="absolute bottom-0 right-10 w-[250px]" />
-                  <img src={Rectangular} alt="Rectangular" className="absolute bottom-0 left-10 w-[250px]" />
-                  <img src={DonateImage} alt="DonateImage" className="absolute top-0 right-20 w-[250px]" />
-                  <img src={Donation} alt="Donation" className="absolute bottom-10 left-20 w-[200px]" />
-                </div>
+                <img src={Rectangular} alt="Rectangular" className="w-[250px] mx-auto" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={DonateImage} alt="DonateImage" className="w-[250px] mx-auto" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Donation} alt="Donation" className="w-[250px] mx-auto" />
               </SwiperSlide>
             </Swiper>
           </div>
 
           {/* Static images for lg devices */}
           <div className="hidden md:block">
-            <div className="absolute bottom-10 lg:bottom-32 right-10 lg:right-40">
-              <img src={Volunteer} alt="Volunteer" className="w-[200px] lg:w-[350px] h-[250px] lg:h-[420px]" />
+            <div className="absolute bottom-10 lg:bottom-20 right-10 lg:right-40">
+              <img src={Volunteer} alt="Volunteer" className="w-[200px] lg:w-[400px] h-[250px] lg:h-510px]" />
             </div>
-            <div className="absolute bottom-10 lg:bottom-32 right-10 lg:right-40">
-              <img src={Rectangular} alt="Rectangular" className="w-[200px] lg:w-[350px] h-[250px] lg:h-[420px]" />
+            <div className="absolute bottom-10 lg:bottom-20 right-10 lg:right-40">
+              <img src={Rectangular} alt="Rectangular" className="w-[200px] lg:w-[400px] h-[250px] lg:h-[510px]" />
             </div>
-            <div className="absolute top-10 lg:top-[70px] right-10 lg:right-56">
-              <img src={DonateImage} alt="DonateImage" className="w-[200px] lg:w-[350px] h-[250px] lg:h-[420px]" />
+            <div className="absolute top-10 lg:top-[40px] right-10 lg:right-56">
+              <img src={DonateImage} alt="DonateImage" className="w-[200px] lg:w-[400px] h-[250px] lg:h-[510px]" />
             </div>
-            <div className="absolute bottom-10 lg:bottom-28 left-10 lg:left-40">
-              <img src={Donation} alt="Donation" className="w-[180px] lg:w-[250px] h-[60px] lg:h-[80px]" />
+            <div className="absolute bottom-10 lg:bottom-10 left-10 lg:left-32">
+              <img src={Donation} alt="Donation" className="w-[180px] lg:w-[250px]  h-[60px] lg:h-[80px]" />
             </div>
           </div>
         </div>

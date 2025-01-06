@@ -8,7 +8,7 @@ import Vector from '../assets/TestimonialImages/Vector.png';
 
 const Testimonial = () => {
   return (
-    <div className="h-auto lg:h-[100vh] bg-white flex flex-col py-10 px-6 lg:px-40">
+    <div className="h-auto lg:h-[100vh] bg-white flex flex-col py-10 lg:py-14 px-6 lg:px-40">
       {/* Header Section */}
       <div className="flex flex-col lg:flex-row justify-between gap-6">
         <div className="text-center lg:text-left">
@@ -20,9 +20,9 @@ const Testimonial = () => {
 
         {/* Avatar Images */}
         <div className="flex justify-center lg:justify-end items-center gap-4">
-          <img src={Image1} alt="Client 1" className="w-16 h-16 lg:w-20 lg:h-20 rounded-full" />
-          <img src={Image2} alt="Client 2" className="w-16 h-16 lg:w-20 lg:h-20 rounded-full" />
-          <img src={Image3} alt="Client 3" className="w-16 h-16 lg:w-20 lg:h-20 rounded-full" />
+          <img src={Image1} alt="Client 1" className="w-16 h-16 lg:w-16 lg:h-16 rounded-full" />
+          <img src={Image2} alt="Client 2" className="w-16 h-16 lg:w-16 lg:h-16 rounded-full" />
+          <img src={Image3} alt="Client 3" className="w-16 h-16 lg:w-16 lg:h-16 rounded-full" />
         </div>
       </div>
 
