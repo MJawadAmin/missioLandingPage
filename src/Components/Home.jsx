@@ -65,11 +65,11 @@ const Home = () => {
                 alt="Donate"
                 className="rounded-lg w-[280px] sm:w-[400px] lg:w-auto"
               />
-              <div className="absolute bottom-4 sm:bottom-10 right-10 lg:right-0 lg:ml-80">
+              <div className="absolute bottom-4 sm:bottom-10 right-10 lg:right-0">
                 <img
                   src={shape1}
                   alt="Volunteer"
-                  className="rounded-lg w-[80px] sm:w-[100px] lg:w-auto"
+                  className="rounded-lg w-[80px] sm:w-[100px] lg:w-auto lg:mr-72"
                 />
               </div>
             </div>
