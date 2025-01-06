@@ -22,7 +22,7 @@ const CountdownTimerPage = () => {
       </div>
 
       {/* Countdown Timer Content */}
-      <div className="p-6 lg:p-20 ml-4 lg:ml-14">
+      <div className="p-6 lg:p-20 ml-4 lg:ml-16">
         <h1 className="bg-[rgb(2,100,126)] text-transparent bg-clip-text text-lg lg:text-2xl">
           Countdown Timer
         </h1>
