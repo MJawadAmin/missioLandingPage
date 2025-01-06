@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { HiMenuAlt3 } from "react-icons/hi";
-import Facebook from "../../assets/Facebook F.png";
-import Twitter from "../../assets/Twitter.png/";
-import Linedin from "../../assets/LinkedIn 2.png";
-import Logo from "../../assets/logo.png";
+import React, { useState } from 'react';
+import { HiMenuAlt3 } from 'react-icons/hi';
+import Facebook from '../../assets/Facebook F.png';
+import Twitter from '../../assets/Twitter.png/';
+import Linedin from '../../assets/LinkedIn 2.png';
+import Logo from '../../assets/logo.png';
 
-const Navbar = () => {
+const Navbar = ({ onNavigate }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -26,19 +26,31 @@ const Navbar = () => {
                 href="#"
                 className="w-[30px] sm:w-[34px] h-[30px] sm:h-[33.86px] bg-[rgb(75,139,156)] rounded-md flex items-center justify-center"
               >
-                <img src={Facebook} alt="Facebook" className="w-[16px] sm:w-[20px] h-[16px] sm:h-[20px]" />
+                <img
+                  src={Facebook}
+                  alt="Facebook"
+                  className="w-[16px] sm:w-[20px] h-[16px] sm:h-[20px]"
+                />
               </a>
               <a
                 href="#"
                 className="w-[30px] sm:w-[34px] h-[30px] sm:h-[33.86px] bg-[rgb(75,139,156)] rounded-md flex items-center justify-center"
               >
-                <img src={Twitter} alt="Twitter" className="w-[16px] sm:w-[20px] h-[16px] sm:h-[20px]" />
+                <img
+                  src={Twitter}
+                  alt="Twitter"
+                  className="w-[16px] sm:w-[20px] h-[16px] sm:h-[20px]"
+                />
               </a>
               <a
                 href="#"
                 className="w-[30px] sm:w-[34px] h-[30px] sm:h-[33.86px] bg-[rgb(75,139,156)] rounded-md flex items-center justify-center"
               >
-                <img src={Linedin} alt="LinkedIn" className="w-[16px] sm:w-[20px] h-[16px] sm:h-[20px]" />
+                <img
+                  src={Linedin}
+                  alt="LinkedIn"
+                  className="w-[16px] sm:w-[20px] h-[16px] sm:h-[20px]"
+                />
               </a>
             </div>
           </div>
@@ -47,7 +59,11 @@ const Navbar = () => {
           <div className="bg-white border-t border-gray-200 h-auto sm:h-[158px] flex flex-col sm:flex-row items-center sm:justify-between px-4 sm:px-8 py-4 relative">
             {/* Logo */}
             <div className="mb-4 sm:mb-0">
-              <img src={Logo} alt="Logo" className="w-[180px] sm:w-[240px] h-auto sm:h-[84px] mx-auto sm:ml-[80px]" />
+              <img
+                src={Logo}
+                alt="Logo"
+                className="w-[180px] sm:w-[240px] h-auto sm:h-[84px] mx-auto sm:ml-[80px]"
+              />
             </div>
 
             {/* Hamburger Icon */}
@@ -60,21 +76,51 @@ const Navbar = () => {
             {/* Navigation Links */}
             <ul
               className={`${
-                isMenuOpen ? "flex" : "hidden"
+                isMenuOpen ? 'flex' : 'hidden'
               } flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8 lg:space-x-14 text-sm sm:text-lg sm:flex`}
             >
-              <li className="hover:text-[#02647E] cursor-pointer">Home</li>
-              <li className="hover:text-[#02647E] cursor-pointer">About Us</li>
-              <li className="hover:text-[#02647E] cursor-pointer">Solutions</li>
-              <li className="hover:text-[#02647E] cursor-pointer">Industries</li>
-              <li className="hover:text-[#02647E] cursor-pointer">Blogs</li>
-              <li className="hover:text-[#02647E] cursor-pointer">Contact Us</li>
+              <div
+                onClick={() => onNavigate('home')}
+                className="hover:text-[#02647E] cursor-pointer"
+              >
+                Home
+              </div>
+              <div
+                onClick={() => onNavigate('about')}
+                className="hover:text-[#02647E] cursor-pointer"
+              >
+                About Us
+              </div>
+              <div
+                onClick={() => onNavigate('featuresSection')}
+                className="hover:text-[#02647E] cursor-pointer"
+              >
+                Solutions
+              </div>
+              <div
+                onClick={() => onNavigate('benefitPage')}
+                className="hover:text-[#02647E] cursor-pointer"
+              >
+                Industries
+              </div>
+              <div
+                onClick={() => onNavigate('demoToday')}
+                className="hover:text-[#02647E] cursor-pointer"
+              >
+                Blogs
+              </div>
+              <div
+                onClick={() => onNavigate('CountdownTimerPage')}
+                className="hover:text-[#02647E] cursor-pointer"
+              >
+                Contact Us
+              </div>
             </ul>
 
             {/* Button */}
             <div
               className={`${
-                isMenuOpen ? "flex" : "hidden"
+                isMenuOpen ? 'flex' : 'hidden'
               } mt-4 sm:mt-0 sm:block`}
             >
               <button className="bg-[rgb(2,100,126)] w-[150px] sm:w-[200px] h-[50px] sm:h-[69px] rounded-full text-gray-100 text-sm sm:text-base font-semibold hover:bg-teal-600">
