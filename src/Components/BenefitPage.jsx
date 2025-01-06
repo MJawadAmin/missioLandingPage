@@ -36,7 +36,7 @@ const BenefitPage = () => {
         {/* Main Div Left */}
         <div className="w-full lg:w-1/2 px-6 py-10 lg:px-20 lg:py-10">
           <h1 className="text-[18px] lg:text-[24px] bg-[rgb(2,100,126)] text-transparent bg-clip-text">
-            benefits for non-profit
+            Benefits for Non-Profits
           </h1>
           <h1 className="font-semibold text-[28px] lg:text-[43px]">
             Why Wait? Get Ahead of the Change!

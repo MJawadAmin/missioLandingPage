@@ -20,7 +20,7 @@ const FeaturesSection = () => {
       <div className="absolute top-0">
         <img src={image1} alt="Background Icon 1" className="w-[100px] sm:w-[150px] lg:w-auto" />
       </div>
-      <div className="absolute bottom-0 right-0">
+      <div className="absolute bottom-0 left-0">
         <img src={image2} alt="Background Icon 2" className="w-[100px] sm:w-[150px] lg:w-auto" />
       </div>
 
@@ -44,7 +44,7 @@ const FeaturesSection = () => {
       </div>
 
       {/* Features Carousel */}
-      <div className="relative z-10 px-6 lg:px-10 mt-10">
+      <div className="relative z-10 px-6 lg:px-10 mt-10 mb-28">
         <Swiper
           modules={[Navigation, Pagination]}
           slidesPerView={1}

@@ -13,7 +13,7 @@ const CountdownTimerPage = () => {
         <img src={Image1} alt="Dotted Arrow" className="w-[150px] lg:w-auto" />
       </div>
 
-      <div className="absolute top-0 right-0">
+      <div className="absolute top-20 right-20">
         <img src={Image2} alt="Top Image" className="w-[150px] lg:w-auto" />
       </div>
 
@@ -37,16 +37,16 @@ const CountdownTimerPage = () => {
       {/* Countdown Timer */}
       <div className="w-full max-w-[1265px] mx-auto flex flex-wrap justify-between items-center px-4 lg:px-7 rounded-lg gap-[1px]">
         <div className="text-white text-sm lg:text-xl bg-[rgb(2,100,126)] flex-1 h-[60px] lg:h-[126px] flex justify-center items-center rounded-l-lg">
-          13 Days
+          6 Days
         </div>
         <div className="text-white text-sm lg:text-xl bg-[rgb(2,100,126)] flex-1 h-[60px] lg:h-[126px] flex justify-center items-center">
-          13 Hours
+          12 Hours
         </div>
         <div className="text-white text-sm lg:text-xl bg-[rgb(2,100,126)] flex-1 h-[60px] lg:h-[126px] flex justify-center items-center">
-          13 Minutes
+          30 Minutes
         </div>
         <div className="text-white text-sm lg:text-xl bg-[rgb(2,100,126)] flex-1 h-[60px] lg:h-[126px] flex justify-center items-center rounded-r-lg">
-          13 Seconds
+          2 Seconds
         </div>
       </div>
 
