@@ -41,8 +41,8 @@ const About = () => {
 
       {/* Right Side - Content */}
       <div className="mt-8 lg:mt-0 lg:ml-20 w-full lg:w-1/2 relative">
-        <div className="absolute justify-start right-4 sm:right-10">
-          <img src={SideImage} alt="" className="w-20 sm:w-32 lg:w-auto" />
+        <div className="absolute justify-start lg:right-4 hidden lg:block  ">
+          <img src={SideImage} alt="" className="w-20  lg:w-auto" />
         </div>
         <h2 className="text-teal-600 font-semibold text-sm sm:text-base">
           About Missio
@@ -60,10 +60,10 @@ const About = () => {
         </p>
 
         {/* Buttons */}
-        <div className="mt-6 flex flex-col sm:flex-row">
+        <div className="mt-6 items-center justify-center flex flex-col sm:flex-row">
           <a
             href="#"
-            className="bg-[rgb(2,100,126)] mb-4 sm:mb-0 sm:mr-6 w-[160px] sm:w-[200px] h-[50px] sm:h-[69px] rounded-full text-gray-100 flex justify-center items-center shadow hover:bg-teal-700 text-sm sm:text-base font-semibold"
+            className="bg-[rgb(2,100,126)] mb-4 sm:mb-0 w-[160px] sm:w-[200px] h-[50px] sm:h-[69px] rounded-full text-gray-100 flex justify-center items-center shadow hover:bg-teal-700 text-sm sm:text-base font-semibold"
           >
             Read more
           </a>
@@ -73,15 +73,6 @@ const About = () => {
           >
             View Services
           </a>
-        </div>
-
-        {/* Volunteer Image */}
-        <div className="justify-end items-end mt-8 sm:mt-12 lg:mt-16">
-          <img
-            src={Donation}
-            alt="Volunteer"
-            className="rounded-md shadow-md mx-auto sm:ml-auto w-[220px] sm:w-[300px] lg:w-auto"
-          />
         </div>
       </div>
     </div>

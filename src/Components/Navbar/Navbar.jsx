@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav>
         <div className="flex flex-col">
           {/* Top Bar */}
-          <div className="h-[70px] bg-[#02647E] flex flex-col sm:flex-row items-center text-gray-200 px-4 sm:px-8">
+          <div className="h-auto lg:h-[70px] bg-[#02647E] flex flex-col sm:flex-row items-center text-gray-200 px-4 sm:px-8">
             <h1 className="text-sm sm:text-base sm:ml-[86px] mb-2 sm:mb-0">
               Email: Missio@missio.io
             </h1>
