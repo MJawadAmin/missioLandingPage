@@ -66,7 +66,7 @@ const About = () => {
         </p>
 
         {/* Buttons */}
-        <div className="mt-6 mb-10 lg:mb-0 gap-4 flex flex-col sm:flex-row ">
+        <div className="mt-6 mb-10 lg:mb-0 gap-4 flex flex-col sm:flex-row  lg:justify-normal justify-center lg:items-start items-center">
           <a
             href="#"
             className="bg-[rgb(2,100,126)] mb-4 sm:mb-0 w-[160px] sm:w-[200px] h-[50px] sm:h-[69px] rounded-full text-gray-100 flex justify-center items-center shadow hover:bg-teal-700 text-sm sm:text-base font-semibold"
