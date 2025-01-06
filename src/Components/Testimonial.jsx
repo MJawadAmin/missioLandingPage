@@ -27,7 +27,7 @@ const Testimonial = () => {
       </div>
 
       {/* Testimonial Box */}
-      <div className="border border-[rgb(2,100,126)] rounded-lg mt-10 p-6 w-full lg:w-[80%] mx-auto shadow-lg relative">
+      <div className="border border-[rgb(2,100,126)] rounded-lg mt-10 p-6 w-full lg:w-[100%] mx-auto shadow-lg relative">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16">
           {/* Left Section */}
           <div className="flex-shrink-0">
