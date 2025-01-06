@@ -16,7 +16,7 @@ const About = () => {
                 className="absolute left-0 bottom-14 lg:bottom-32 w-20 sm:w-32 lg:w-auto"
               />
             </div>
-        <div className="absolute ml-10 lg:ml-[96px] mt-12  w-[250px] sm:w-[360px] lg:w-[450.07px] h-[250px] sm:h-[360px] lg:h-[450.07px] border-2 border-[rgb(2,100,126)] rounded-3xl transform rotate-[-14deg]">
+        <div className="absolute ml-10 lg:ml-[96px] mt-12  w-[250px] sm:w-[350px] lg:w-[450.07px] h-[250px] sm:h-[350px] lg:h-[450.07px] border-2 border-[rgb(2,100,126)] rounded-3xl transform rotate-[-14deg]">
           </div>
           <div className="relative w-full mt-10 md:ml-0 lg:ml-8  ">
               {/* Image */}
@@ -66,7 +66,7 @@ const About = () => {
         </p>
 
         {/* Buttons */}
-        <div className="mt-6 gap-4 flex flex-col sm:flex-row">
+        <div className="mt-6 mb-10 lg:mb-0 gap-4 flex flex-col sm:flex-row ">
           <a
             href="#"
             className="bg-[rgb(2,100,126)] mb-4 sm:mb-0 w-[160px] sm:w-[200px] h-[50px] sm:h-[69px] rounded-full text-gray-100 flex justify-center items-center shadow hover:bg-teal-700 text-sm sm:text-base font-semibold"
