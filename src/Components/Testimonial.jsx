@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Image1 from '../assets/TestimonialImages/Image_1.png';
 import Image2 from '../assets/TestimonialImages/Image_2.png';
 import Image3 from '../assets/TestimonialImages/Image_3.png';
-import MainDivImage1 from '../assets/TestimonialImages/video-4-btn-bg 1.png';
 import MainDivImage2 from '../assets/TestimonialImages/star 2.png';
 import Vector from '../assets/TestimonialImages/Vector.png';
+import SmileImage from '../assets/TestimonialImages/smileImage.png';
 
 const Testimonial = () => {
   const testimonials = [
@@ -27,6 +27,13 @@ const Testimonial = () => {
       name: 'John Smith',
       position: 'Software Engineer',
       quote: 'An amazing experience with excellent results!',
+      rating: 5,
+    },
+    {
+      image: SmileImage,
+      name: 'abcdefgh',
+      position: 'dsfdsgdsfgsfd',
+      quote: 'jksdghkjdsfhgdsfljkhgdslfkjgfdkj',
       rating: 5,
     },
   ];
@@ -78,7 +85,7 @@ const Testimonial = () => {
           {/* Left Section */}
           <div className="flex-shrink-0">
             <img
-              src={MainDivImage1}
+              src={testimonials[activeIndex].image}
               alt="Testimonial"
               className="w-full lg:w-[350px] h-auto lg:h-[390px] rounded-lg object-cover"
             />
