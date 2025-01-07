@@ -6,3 +6,8 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+.newsletter-container {
+  background-color: #026672; /* Matches the theme */
+  padding: 2.5rem 0; /* Adds vertical spacing */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}

@@ -12,6 +12,7 @@ import Footer from './Components/Footer';
 
 
 
+
 function App() {
   const scrollToSection = (id) => {
     console.log('ID', id);
@@ -52,7 +53,7 @@ function App() {
       <div id='testimonial'>
         <Testimonial />
       </div>
-      <Footer />
+   <Footer/>
     </>
   );
 }
