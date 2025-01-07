@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="absolute top-28 left-0">
         <img src={TopLeft} alt="Top Left Decoration" className="w-[80px] sm:w-[120px] lg:w-auto" />
       </div>
-      <div className="absolute top-32 right-0">
+      <div className="absolute top-40 right-8">
         <img src={TopRight} alt="Top Right Decoration" className="w-[80px] sm:w-[120px] lg:w-auto" />
       </div>
       <div className="absolute bottom-0 left-0">
@@ -46,24 +46,25 @@ const Footer = () => {
       </div>
 
       {/* Footer Content */}
-      <div className=" w-full flex  justify-between  px-6 pt-48 lg:px-32 items-center">
+      
         {/* Left Section */}
-        <div className="w-full flex flex-row  lg:w-full">
-            <div className="bg-transparent flex items-center gap-4 mb-4 flex-col lg:w-1/4 ">
-              <img src={Missio} alt="Logo" className="w-[120px] sm:w-[150px] lg:w-auto" />
+        <div className="w-full flex flex-row  lg:w-[93%] px-6  ml-0 lg:ml-[100px]  space-x-28 pt-48">
+            <div className="bg-transparent space-y-5  flex items-center  w-3/5  flex-col  ">
+              <img src={Missio} alt="Logo" className="w-[120px] lg:mt-[-20px] mr-7 sm:w-[150px] lg:w-auto" />
              <div className=''>
-              <p className="text-sm">
+              <p className=" px-5">
           Missio exists to empower small and medium-sized organizations by providing innovative, intuitive software solutions that simplify donor engagement
           </p>           
            </div>
           </div>
          
           {/* Middle Section */}
-        <div className="flex flex-col lg:flex-row  lg:ml-44  justify-between  w-full ">
           {/* Links */}
-          <div className=" ">
-            <h2 className="font-bold mb-4 text-2xl">Our Links</h2>
-            <ul className="space-y-2">
+          <div className=" flex flex-col lg:flex-col space-y-5   w-1/2 ">
+            
+            <h2 className="text-[32px]">Our Links</h2>
+           
+            <ul className="space-y-5">
               <li>
                 <a href="#" className="hover:underline">
                   Home
@@ -89,9 +90,9 @@ const Footer = () => {
 
 
           {/* Social Links */}
-          <div className="w-full lg:ml-44 ">
-            <h2 className="font-bold mb-4">Socials</h2>
-            <ul className="space-y-2">
+          <div className="w-1/2 space-y-5 ">
+            <h2 className=" text-[32px] mb-4">Socials</h2>
+            <ul className="space-y-5">
               <li>
                 <a href="#" className="hover:underline">
                   Facebook
@@ -110,29 +111,29 @@ const Footer = () => {
             </ul>
           </div>
 {/* Address Section */}
-<div className="w-full lg:ml-44 ">
-            <h2 className="font-bold mb-4 text-center lg:text-left">Address</h2>
-            <ul className="space-y-4 text-sm">
-              <li className="flex items-start gap-2">
+<div className="w-3/4  space-y-5 ">
+            <h2 className="  text-center lg:text-left ml-14 text-[32px]">Address</h2>
+            <ul className="space-y-5 text-sm">
+              <li className="flex items-start gap-5 w-72">
                 <span>
-                  <img src={LocationImage} alt="" />
+                  <img src={LocationImage} alt="" className='h-[45px] w-[41px]' />
                 </span>
                 373 Broadway Suite B17, New York, New York 10013
               </li>
               <li className="flex items-start gap-2">
                 <span className="material-icons-outlined">
-                  <img src={Email} alt="" />
+                  <img src={Email} alt=""  className='w-[40px] h-[44px]'/>
                 </span>
                 missio@missio.io
               </li>
               <li className="flex items-start gap-2">
                 <span className="material-icons-outlined">
-                  <img src={Call} alt="" />
+                  <img src={Call} alt="" className='w-[49px] h-[34px]' />
                 </span>
                 (844) 568-0941
               </li>
             </ul>
-          </div>
+          
         </div>
 
        
@@ -140,7 +141,7 @@ const Footer = () => {
           
         </div>
       </div>
-    </div>
+
   );
 };
 
