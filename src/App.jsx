@@ -7,8 +7,9 @@ import FeaturesSection from './Components/FeatureSection';
 import BenefitPage from './Components/BenefitPage';
 import DemoToday from './Components/DemoToday';
 import CountdownTimerPage from './Components/CountdownTimerPage';
-import Testimonial from './Components/Testimonial';
+import Testimonial from './Components/Testimonial'
 import Footer from './Components/Footer';
+
 
 
 function App() {
@@ -51,7 +52,6 @@ function App() {
       <div id='testimonial'>
         <Testimonial />
       </div>
-
       <Footer />
     </>
   );

@@ -7,10 +7,13 @@ import BottomRight from '../assets/BottomRight.png';
 import LocationImage from '../assets/FooterImages/Near Me.png'
 import Email from '../assets/FooterImages/At sign.png'
 import Call from '../assets/FooterImages/Phone.png'
+import Newsletter from "./Newsletter";
 
 
 const Footer = () => {
   return (
+    <>
+  
     <div className="bg-[rgb(0,58,73)] text-white py-10 relative h-auto lg:h-[50vh]">
       {/* Background Decorations */}
       <div className="absolute top-0 left-0">
@@ -113,6 +116,7 @@ const Footer = () => {
         
       </div>
     </div>
+    </>
   );
 };
 

@@ -5,6 +5,7 @@ import Image3 from '../assets/TestimonialImages/Image_3.png';
 import MainDivImage2 from '../assets/TestimonialImages/star 2.png';
 import Vector from '../assets/TestimonialImages/Vector.png';
 import SmileImage from '../assets/TestimonialImages/smileImage.png';
+import Newsletter from "./Newsletter";
 
 const Testimonial = () => {
   const testimonials = [
@@ -53,7 +54,8 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="h-auto lg:h-[100vh] bg-white flex flex-col py-10 lg:py-14 px-6 lg:px-40">
+    <>
+    <div className="h-auto lg:h-[100vh] bg-white flex flex-col py-10 lg:py-14 px-6 lg:px-40 relative">
       {/* Header Section */}
       <div className="flex flex-col lg:flex-row justify-between gap-6">
         <div className="text-center lg:text-left">
@@ -143,6 +145,10 @@ const Testimonial = () => {
         </div>
       </div>
     </div>
+    <div className="bg-[rgb(255,255,255)] text-white  relative  h-auto lg:h-[30vh]">
+    {/* Add Search Bar */}
+    <Newsletter/></div>
+    </>
   );
 };
 
