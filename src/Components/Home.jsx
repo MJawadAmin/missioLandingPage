@@ -4,6 +4,7 @@ import supportShape2 from "../assets/support-shape-hand-1-2 1.png";
 import kids from "../assets/ymr-img-1-min 1@2x.png";
 import lady from "../assets/lady.png";
 import shape1 from "../assets/shape3 1.png";
+import Gather from '../assets/gathher.png'
 
 const Home = () => {
   // Dummy data for carousel
@@ -29,7 +30,7 @@ const Home = () => {
       description:
         "Join thousands of non-profits utilizing the latest technology to enhance their operations and mission.",
       buttonText: "Get Started Now",
-      image: kids,
+      image: Gather,
       imageShape: shape1,
     },
   ];
