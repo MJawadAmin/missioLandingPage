@@ -7,8 +7,8 @@ import bottomImage from "../assets/shape1 1.png";
 const About = () => {
   return (
     <div className="bg-white mt-10 px-6 lg:px-20 flex flex-col lg:flex-row items-center lg:items-start relative">
-      <div className="absolute bottom-0 right-14">
-      <img src={Donation} alt="" />
+      <div className="absolute bottom-0 lg:block hidden right-14">
+      <img src={Donation} alt="   "  className="w-2/3  lg:ml-0 lg:w-auto"/>
       </div>
       {/* Left Side - Image and Experience Box */}
       <div className="lg:w-1/2  lg:flex justify-center lg:justify-start relative pb-28">
