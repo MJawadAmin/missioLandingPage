@@ -32,9 +32,9 @@ const Testimonial = () => {
     },
     {
       image: SmileImage,
-      name: 'abcdefgh',
-      position: 'dsfdsgdsfgsfd',
-      quote: 'jksdghkjdsfhgdsfljkhgdslfkjgfdkj',
+      name: 'Amit Singhania',
+      position: 'Ceo Of Missio',
+      quote: 'It gives you a comfortable environment to overcome your Hesitation',
       rating: 5,
     },
   ];
